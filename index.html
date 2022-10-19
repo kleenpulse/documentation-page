@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/app.js" defer></script>
+    <title>Documentation Page</title>
+</head>
+<body>
+    <!-- This div element contains the page heading info + description-->
+    <header id="top"></header>
+    <div class="logo-div">
+        <img class="logo" src="https://docs.python.org/3/_static/py.png">
+        <h2 class="logo-text">Python</h2>
+    </div>
+    <!--Page heading ends here -->
+    
+    <div class="rotate hidden">
+        <img src="https://res.cloudinary.com/liquidtime/image/upload/v1666168764/code-logo_pe2d8k.png" class="code" alt="code icon">
+    </div>
+    <!--Side nav starts here -->
+    
+    <div id="description">
+        <p class="description hidden">Welcome to Python 3 documentation!</p>
+    </div>
+    <div class="sidenav hidden">
+        <a href="#">What's new</a>
+        <a href="#howTos">Python's HowTos</a>
+        <a href="#setup-usage">Setup and Usage</a>
+        <a href="#python-library">Library Reference</a>
+        <a href="#faq">FAQ?</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <!--Side nav ends here -->
+    
+    <!--Main section starts here -->
+    <main id="main-doc">
+        <div class="switch" id="switch">
+            <div id="toggle">
+
+                <i class="indicator"></i>
+
+            </div>
+        </div>
+        <section class='main-section hidden' id="what-is-new">
+            <header>
+                <h2 class="hidden">What's new, Python 3 Overview</h2>
+            </header>
+            <p>This article explains the new features in Python 3.9, compared to 3.8. Python 3.9 was released on October
+                5th, 2020</p>
+            <p>Summary – Release highlights¶</p>
+            <ul>New Syntax Features:
+                <li><b>PEP 584</b>, union operators added to <code>dict;</code></li>
+                <li><b>PEP 585</b>, type hinting generics in standard collections;</li>
+                <li><b>PEP 614</b>, relaxed grammar restrictions on decorators</li>
+            </ul>
+            <ul>New Built-in Features:
+                <li><b>PEP 616</b>, string methods to remove prefixes and suffixes.</li>
+            </ul>
+            </ul>
+            <ul>New Features in the Standard library:
+                <li><b>PEP 593</b>, flexible function and variable annotations;</li>
+                <li><code>os.pidfd_open()</code> added that allows process management without races and signals.</li>
+            </ul>
+            <ul>Interpreter Improvement:
+                <li><b>PEP 573</b>, fast access to module state from methods of C extension types;</li>
+                <li><b>PEP 617</b>, CPython now uses a new parser based on PEG;</li>
+                <li>a number of Python builtins <code>(range, tuple, set, frozenset, list, dict)</code> are now sped up
+                    using <b>PEP 590</b> vectorcall;</li>
+                <li>garbage collection does not block on resurrected objects;</li>
+                <li>a number of standard library modules
+                    <code>(audioop, ast, grp, _hashlib, pwd, _posixsubprocess, random, select, struct, termios, zlib)</code>
+                    are now using the stable ABI defined by <b>PEP 384</b>.</li>
+            </ul>
+            <ul>New Libary modules:
+                <li><b>PEP 615</b>, the IANA Time Zone Database is now present in the standard library in the zoneinfo
+                    module;</li>
+                <li>an implementation of a topological sort of a graph is now provided in the new graphlib module.</li>
+            </ul>
+            <ul>Release Process Change:
+                <li><b>PEP 602</b>, CPython adopts an annual release cycle.</li>
+                <a class="more-details" href="https://docs.python.org/3.9/whatsnew/3.9.html" target="_blank">More
+                    Details</a>
+    
+        </section>
+        <section id="howTos" class='main-section hidden'>
+            <header>
+                <h2 class="hidden">Python's HowTos in-depth</h2>
+            </header>
+            <p>Python HOWTOs are documents that cover a single, specific topic, and attempt to cover it fairly completely.
+                Modelled on the Linux Documentation Project’s HOWTO collection, this collection is an effort to foster
+                documentation that’s more detailed than the Python Library Reference.</p>
+            <ul>Currently the HOWTOs are:
+                <br>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Porting Python 2 Code to Python 3</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Porting Extension Modules to Python 3</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Curses Programming with Python</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Descriptor HowTo Guide</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Functional Programming HOWTO</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Logging HOWTO</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Logging Cookbook</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Regular Expression HOWTO</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Socket Programming HOWTO</li>
+                </a>
+                <a href="https://docs.python.org/3.9/howto/index.html" target="_blank">
+                    <li>Sorting HOW TO</li>
+                </a>
+            </ul>
+        </section>
+    
+        <section id="setup-usage" class='main-section hidden'>
+            <header>
+                <h2 class="hidden">Setup and Usage</h2>
+            </header>
+            <p class="setup-p">This part of the documentation is devoted to general information on the setup of the Python
+                environment on different platforms, the invocation of the interpreter and things that make working with
+                Python easier.</p>
+            <ul>
+                <a href="https://docs.python.org/3.9/using/index.html">
+                    <li>Command line and environment
+                    </li>
+                </a>
+                <a href="https://docs.python.org/3.9/using/index.html">
+                    <li>Using Python on Unix platforms</li>
+                </a>
+                <a href="https://docs.python.org/3.9/using/index.html">
+                    <li>Using Python on Windows
+                    </li>
+                </a>
+                <a href="https://docs.python.org/3.9/using/index.html">
+                    <li> Using Python on a Macintosh
+                    </li>
+                </a>
+                <a href="https://docs.python.org/3.9/using/index.html">
+                    <li>Editors and IDEs
+                    </li>
+                </a>
+            </ul>
+        </section>
+    
+        <section id="python-library" class='main-section hidden'>
+            <header>
+                <h2 class="hidden">Python Library Reference</h2>
+            </header>
+            <p class="hidden">While The Python Language Reference describes the exact syntax and semantics of the Python language, this
+                library reference manual describes the standard library that is distributed with Python. It also describes
+                some of the optional components that are commonly included in Python distributions.
+    
+                Python’s standard library is very extensive, offering a wide range of facilities as indicated by the long
+                table of contents listed below. The library contains built-in modules (written in C) that provide access to
+                system functionality such as file I/O that would otherwise be inaccessible to Python programmers, as well as
+                modules written in Python that provide standardized solutions for many problems that occur in everyday
+                programming. Some of these modules are explicitly designed to encourage and enhance the portability of
+                Python programs by abstracting away platform-specifics into platform-neutral APIs.
+    
+                The Python installers for the Windows platform usually include the entire standard library and often also
+                include many additional components. For Unix-like operating systems Python is normally provided as a
+                collection of packages, so it may be necessary to use the packaging tools provided with the operating system
+                to obtain some or all of the optional components.
+    
+                In addition to the standard library, there is a growing collection of several thousand components (from
+                individual programs and modules to packages and entire application development frameworks), available from
+                the Python Package Index.</p>
+            <p>For more details/info about Python library preferences </p>
+            <a href="https://docs.python.org/3.9/library/index.html" target="_blank">Click here</a>
+        </section>
+        <section id="faq" class='main-section hidden'>
+            <header>
+                <h2 class="hidden">Frequently Asked Questions</h2>
+            </header>
+            <ul>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>General Python FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>Programming FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>Design and History FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>Library and Extension FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>Extending/Embedding FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html" class="hidden" target="_blank">
+                    <li>Python on Windows FAQ</li>
+                </a>
+                <a href="https://docs.python.org/3.9/faq/index.html"  class="hidden"target="_blank">
+                    <li>Graphic User Interface FAQ
+                    </li>
+                </a>
+            </ul>
+        </section>
+    
+        <div id="contact" class="hidden">
+            <h2>CONTACT FORM</h2>
+        </div>
+        <div id="form-div">
+            <form action="#">
+                <div class="inputs" class="hidden">
+                    <label id="label-for-name" for="name"> <input type="text" id="name" name="name" placeholder="Name here"></label>
+                    <label for="email" id="label-for-email"><input type="email" id="email" name="email" title="test email here"
+                            placeholder="Email"></label>
+                </div>
+    
+                <textarea class="hidden" placeholder="What's on your mind" title="Ridiculous words here"></textarea>
+    
+                <button class="hidden" id="submit" onclick="alert('Thanks for contacting us :)')">submit</button>
+    
+            </form>
+            
+        </div>
+        <div class="wrapper hidden"">
+            <footer>Made with ❤ Liquid | ©2022</footer>
+        </div>
+    </main>
+    <div class="top-wrapper hidden"><a href="#top" class="back-to-top" title="back to top">↑</a></div>
+    <!--Main section ends here-->
+
+</body>
+</html>
